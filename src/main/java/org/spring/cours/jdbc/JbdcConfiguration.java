@@ -11,10 +11,9 @@ import javax.sql.DataSource;
 @Configuration
 @PropertySource("classpath:application.properties")
 public class JbdcConfiguration {
-    
+
     @Autowired
     private Environment environment;
-
 
     @Bean(name = "dataSource")
     public DataSource dataSource() {
