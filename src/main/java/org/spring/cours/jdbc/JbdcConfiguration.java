@@ -18,9 +18,9 @@ public class JbdcConfiguration {
     @Bean(name = "dataSource")
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driverClassName"));
+        dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driver"));
         dataSource.setUrl(environment.getRequiredProperty("jdbc.url"));
-        dataSource.setUsername(environment.getRequiredProperty("jdbc.username"));
+        dataSource.setUsername(environment.getRequiredProperty("jdbc.user"));
         dataSource.setPassword(environment.getRequiredProperty("jdbc.password"));
         return dataSource;
     }
