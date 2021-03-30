@@ -11,5 +11,4 @@ public class Main {
         JbdcConfiguration jbdcConfiguration = context.getBean(JbdcConfiguration.class);
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(jbdcConfiguration.dataSource());
     }
-
 }
